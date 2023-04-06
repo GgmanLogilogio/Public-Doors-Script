@@ -1,0 +1,993 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "MrBee Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+---Nofitication
+
+OrionLib:MakeNotification({
+
+	Name = "Thank You for Using Our Script.",	Content = "Created By MrBea",
+
+	Image = "rbxassetid://4483345998",
+
+	Time = 5
+
+})
+
+---Tabs & Buttons
+
+local Tab = Window:MakeTab({
+
+	Name = "Main",
+
+	Icon = "rbxassetid://4483345998",
+
+	PremiumOnly = false
+
+})
+
+local Section = Tab:AddSection({
+
+	Name = "Crucifix Things"
+
+})
+
+Tab:AddLabel("Crucifixs")
+
+Tab:AddButton({
+
+	Name = "Crucifix Spawner",
+
+	Callback = function()
+
+      		_G.Uses = 1 --How many times the Crucifix can be used.
+
+_G.Range = 30 --From how far it would crucifix an entity.
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+
+  	end    
+
+})
+
+Tab:AddButton({
+
+	Name = "We Will Add more Soon",
+
+	Callback = function()
+
+      		print("button pressed")
+
+  	end    
+
+})
+
+local Tab = Window:MakeTab({
+
+	Name = "Spawner",
+
+	Icon = "rbxassetid://4483345998",
+
+	PremiumOnly = false
+
+})
+
+Tab:AddLabel("Basic Entities")
+
+  	end    
+
+})
+
+Tab:AddButton({
+
+	Name = "Seek [ This Doesnt Work Somethimes ]",
+
+	Callback = function()
+
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/dreadmania/Scripts/main/Spawner_V2.lua"))()
+
+ 
+
+local Configuration = {
+
+ 
+
+    Kill = false, -- change to "Damage = 10," for eyes, doesnt work on other entities
+
+ 
+
+    Speed = 160, -- 60 for rush, doesnt work on other entities
+
+ 
+
+    Time = 3 -- 5 for rush, doesnt work on other entities
+
+ 
+
+}
+
+ 
+
+EntitySpawner:Spawn("Seek", Configuration)
+
+  	end    
+
+})
+
+local Section = Tab:AddSection({
+
+	Name = "Rooms+ Update Spawners"
+
+})
+
+  	end    
+
+})
+
+Tab:AddButton({
+
+	Name = "Glitch",
+
+	Callback = function()
+
+      		require(game.ReplicatedStorage.ClientModules.EntityModules.Glitch).stuff(require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game),
+
+workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")])
+
+  	end    
+
+})
+
+  	end    
+
+})
+
+Tab:AddLabel("A - 00 Rooms Entities")
+
+Tab:AddButton({
+
+	Name = "A - 60",
+
+	Callback = function()
+
+      		loadstring(game:HttpGet("https://pastefy.ga/NBKvr1hr/raw"))()  
+
+  	end    
+
+})
+
+  	end    
+
+})
+
+Tab:AddButton({
+
+	Name = "A - 90",
+
+	Callback = function()
+
+      		local a = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules["A90"])(require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game))()         
+
+  	end    
+
+})
+
+  	end    
+
+})
+
+Tab:AddButton({
+
+	Name = "A - 120",
+
+	Callback = function()
+
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/yieviro92creepy/testA120/main/120"))()  
+
+  	end    
+
+})
+
+  	end    
+
+})
+
+local Tab = Window:MakeTab({
+
+	Name = "Hardcore Mode",
+
+	Icon = "rbxassetid://4483345998",
+
+	PremiumOnly = false
+
+})
+
+Tab:AddLabel("Hardcore Mode")
+
+Tab:AddButton({
+
+	Name = "Hardcore Mode",
+
+	Callback = function()
+
+      		Loadstring(game:HttpGet("https://pastebin.com/raw/xb2njQAH"))();
+
+  	end    
+
+})
+
+Tab:AddButton({
+
+	Name = "Rebound",
+
+	Callback = function()
+
+      		local part = Instance.new("Part")
+
+part.Name = "Bound"
+
+part.Parent = workspace
+
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(61, 171, 98)
+
+game.Lighting.MainColorCorrection.Contrast = 0.2
+
+game.Lighting.MainColorCorrection.Saturation = -0.7
+
+local tween = game:GetService("TweenService")
+
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5), {Contrast = 0}):Play()
+
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5), {Saturation = 0}):Play()
+
+local TweenService = game:GetService("TweenService")
+
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(255, 255, 255)})
+
+TW:Play()
+
+local cue1 = Instance.new("Sound")
+
+cue1.Parent = game.Workspace
+
+cue1.Name = "Scream"
+
+cue1.SoundId = "rbxassetid://9114397505"
+
+local distort = Instance.new("DistortionSoundEffect")
+
+distort.Parent = cue1
+
+distort.Level = 1
+
+local distort2 = Instance.new("DistortionSoundEffect")
+
+distort2.Parent = cue1
+
+distort2.Level = 1
+
+local pitch = Instance.new("PitchShiftSoundEffect")
+
+pitch.Parent = cue1
+
+pitch.Octave = 0.5
+
+local pitch2 = Instance.new("PitchShiftSoundEffect")
+
+pitch2.Parent = cue1
+
+pitch2.Octave = 0.5
+
+local pitch3 = Instance.new("PitchShiftSoundEffect")
+
+pitch3.Parent = cue1
+
+pitch3.Octave = 0.5
+
+cue1.Volume = 0.1
+
+cue1:Play()
+
+local cue2 = Instance.new("Sound")
+
+cue2.Parent = game.Workspace
+
+cue2.Name = "Spawn"
+
+cue2.SoundId = "rbxassetid://9114221327"
+
+cue2.Volume = 3
+
+cue2:Play()
+
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+
+local camara = game.Workspace.CurrentCamera
+
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+
+	camara.CFrame = camara.CFrame * shakeCf
+
+end)
+
+camShake:Start()
+
+camShake:ShakeOnce(10,3,0.1,6,2,0.5)
+
+wait(2.8)
+
+function GetGitSound(GithubSnd,SoundName)
+
+	local url=GithubSnd
+
+	if not isfile(SoundName..".mp3") then
+
+		writefile(SoundName..".mp3", game:HttpGet(url))
+
+	end
+
+	local sound=Instance.new("Sound")
+
+	sound.SoundId=(getcustomasset or getsynasset)(SoundName..".mp3")
+
+	return sound
+
+end
+
+local scare = Instance.new("Sound")
+
+scare.Parent = game.Workspace
+
+scare.Name = "MyEarsBurn"
+
+scare.SoundId = "rbxassetid://5567523008"
+
+scare.PlaybackSpeed = 3
+
+scare.Volume = 1
+
+local shift = Instance.new("PitchShiftSoundEffect")
+
+shift.Octave = 0.5
+
+shift.Parent = scare
+
+local distort = Instance.new("DistortionSoundEffect")
+
+distort.Parent = scare
+
+distort.Level = 1
+
+local TweenService = game:GetService("TweenService")
+
+local spookee = TweenService:Create(scare, TweenInfo.new(0.3),{Volume = 0})
+
+local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+
+-- Create entity
+
+local entity = Creator.createEntity({
+
+    CustomName = "Rebound", -- Custom name of your entity
+
+    Model = "rbxassetid://11459817091", -- Can be GitHub file or rbxassetid
+
+    Speed = 91, -- Percentage, 100 = default Rush speed
+
+    DelayTime = 1.4, -- Time before starting cycles (seconds)
+
+    HeightOffset = 0,
+
+    CanKill = true,
+
+    BreakLights = false,
+
+    KillRange = 50,
+
+    BackwardsMovement = true,
+
+    FlickerLights = {
+
+        false, -- Enabled
+
+        2.5, -- Time (seconds)
+
+    },
+
+    Cycles = {
+
+        Min = 1,
+
+        Max = 1
+
+    },
+
+    CamShake = {
+
+        true, -- Enabled
+
+        {5, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
+
+        100, -- Shake start distance (from Entity to you)
+
+    },
+
+    Jumpscare = {
+
+        false, -- Enabled ('false' if you don't want jumpscare)
+
+        {
+
+            Image1 = "https://www.roblox.com/library/11862656491", -- Image1 url
+
+            Image2 = "https://www.roblox.com/library/11862656491", -- Image2 url
+
+            Shake = false,
+
+            Sound1 = {
+
+                0, -- SoundId
+
+                { Volume = 0.5 }, -- Sound properties
+
+            },
+
+            Sound2 = {
+
+                5567523008, -- SoundId
+
+                { Volume = 0.5 }, -- Sound properties
+
+            },
+
+            Flashing = {
+
+                true, -- Enabled
+
+                Color3.fromRGB(6, 38, 135), -- Color
+
+            },
+
+            Tease = {
+
+                false, -- Enabled ('false' if you don't want tease)
+
+                Min = 1,
+
+                Max = 3,
+
+            },
+
+        },
+
+    },
+
+    CustomDialog = {"You died to Rebound...", "It appears at the next door and has a chance to stay there or run back to the latest door.", "He will come back many times after his initial spawn", "so hide every next door until it is safe.."}, -- Custom death message (can be as long as you want)
+
+})
+
+-----[[ Advanced ]]-----
+
+entity.Debug.OnEntityEnteredRoom = function(room)
+
+    print("Entity:", entity, "has entered room:", room)
+
+    Speed = 0
+
+    wait(2)
+
+    Speed = 170
+
+end
+
+entity.Debug.OnEntitySpawned = function(entityModel)
+
+    print("Entity has spawned:", entityModel)
+
+workspace.Rebound.Rebound_Cue:Destroy()
+
+workspace.Rebound.Rebound_Cue2:Destroy()
+
+workspace.Rebound.Torso.Idle:Destroy()
+
+workspace.Rebound.Torso.Footsteps:Destroy()
+
+local bruh = workspace.Rebound.Torso
+
+local TweenService = game:GetService("TweenService")
+
+local spawn = Instance.new("Sound")
+
+spawn.Parent = bruh
+
+spawn.Name = "ReboundSpawn"
+
+spawn.SoundId = "rbxassetid://9114221327"
+
+spawn.Volume = 5
+
+spawn.RollOffMaxDistance = 10000
+
+spawn.RollOffMinDistance = 450
+
+spawn:Play()
+
+    local move = GetGitSound("https://github.com/check78/worldcuuuup/blob/main/DoomBegin.mp3?raw=true","Reboun")
+
+    move.Parent = bruh
+
+    move.Name = "ReboundMoving"
+
+    move.Volume = 0
+
+    move.Looped = true
+
+local vroom = TweenService:Create(move, TweenInfo.new(2),{Volume = 0.2})
+
+    local distort = Instance.new("DistortionSoundEffect")
+
+    distort.Level = 0.75
+
+    distort.Parent = move
+
+	move.RollOffMaxDistance = 200
+
+	move.RollOffMinDistance = 100
+
+    local tree = Instance.new("TremoloSoundEffect")
+
+    tree.Depth = 1
+
+    tree.Duty = 1
+
+    tree.Frequency = 5
+
+    tree.Parent = move
+
+    local eq = Instance.new("EqualizerSoundEffect")
+
+    eq.HighGain = -60
+
+    eq.MidGain = 10
+
+    eq.LowGain = 10
+
+    eq.Parent = move
+
+	wait(1)
+
+    vroom:Play()
+
+	move:Play()
+
+end
+
+entity.Debug.OnEntityDespawned = function(entityModel)
+
+    print("Entity has despawned:", entityModel)
+
+end
+
+entity.Debug.OnEntityStartMoving = function(entityModel)
+
+    print("Entity has started moving:", entityModel)
+
+end
+
+entity.Debug.OnEntityFinishedRebound = function(entityModel)
+
+    print("Entity finished rebound:", entityModel)
+
+end
+
+entity.Debug.OnDeath = function()
+
+    warn("You died.")
+
+    firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You died to Rebound...", "It appears at the next door and has a chance to stay there or run back to the latest door.", "He will come back many times after his initial spawn", "so hide every next door until it is safe.."}, "Blue")
+
+	local ReSt = game.ReplicatedStorage
+
+	local Plr = game.Players.LocalPlayer
+
+		scare:Play()
+
+	    ReSt.GameStats["Player_".. Plr.Name].Total.DeathCause.Value = "Rebound"
+
+		wait(0.5)
+
+		scare:Destroy()
+
+end
+
+------------------------
+
+-- Run the created entity
+
+Creator.runEntity(entity)
+
+local randomnumber = math.random(3,5)
+
+print(randomnumber)
+
+for i = 3,randomnumber do
+
+	game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+
+wait(1)
+
+function GetGitSound(GithubSnd,SoundName)
+
+	local url=GithubSnd
+
+	if not isfile(SoundName..".mp3") then
+
+		writefile(SoundName..".mp3", game:HttpGet(url))
+
+	end
+
+	local sound=Instance.new("Sound")
+
+	sound.SoundId=(getcustomasset or getsynasset)(SoundName..".mp3")
+
+	return sound
+
+end
+
+local scare = Instance.new("Sound")
+
+scare.Parent = game.Workspace
+
+scare.Name = "MyEarsBurn"
+
+scare.SoundId = "rbxassetid://5567523008"
+
+scare.PlaybackSpeed = 3
+
+scare.Volume = 1
+
+local shift = Instance.new("PitchShiftSoundEffect")
+
+shift.Octave = 0.5
+
+shift.Parent = scare
+
+local distort = Instance.new("DistortionSoundEffect")
+
+distort.Parent = scare
+
+distort.Level = 1
+
+local TweenService = game:GetService("TweenService")
+
+local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+
+-- Create entity
+
+local entity = Creator.createEntity({
+
+    CustomName = "Rebound", -- Custom name of your entity
+
+    Model = "rbxassetid://11459817091", -- Can be GitHub file or rbxassetid
+
+    Speed = 91, -- Percentage, 100 = default Rush speed
+
+    DelayTime = 1.4, -- Time before starting cycles (seconds)
+
+    HeightOffset = 0,
+
+    CanKill = true,
+
+    BreakLights = false,
+
+    KillRange = 40,
+
+    BackwardsMovement = true,
+
+    FlickerLights = {
+
+        false, -- Enabled
+
+        2.5, -- Time (seconds)
+
+    },
+
+    Cycles = {
+
+        Min = 1,
+
+        Max = 1
+
+    },
+
+    CamShake = {
+
+        true, -- Enabled
+
+        {5, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
+
+        100, -- Shake start distance (from Entity to you)
+
+    },
+
+    Jumpscare = {
+
+        false, -- Enabled ('false' if you don't want jumpscare)
+
+        {
+
+            Image1 = "https://www.roblox.com/library/11862656491", -- Image1 url
+
+            Image2 = "https://www.roblox.com/library/11862656491", -- Image2 url
+
+            Shake = false,
+
+            Sound1 = {
+
+                0, -- SoundId
+
+                { Volume = 0.5 }, -- Sound properties
+
+            },
+
+            Sound2 = {
+
+                5567523008, -- SoundId
+
+                { Volume = 0.5 }, -- Sound properties
+
+            },
+
+            Flashing = {
+
+                true, -- Enabled
+
+                Color3.fromRGB(6, 38, 135), -- Color
+
+            },
+
+            Tease = {
+
+                false, -- Enabled ('false' if you don't want tease)
+
+                Min = 1,
+
+                Max = 3,
+
+            },
+
+        },
+
+    },
+
+    CustomDialog = {"You died to Rebound...", "It appears at the next door and has a chance to stay there or run back to the latest door.", "He will come back many times after his initial spawn", "so hide every next door until it is safe.."}, -- Custom death message (can be as long as you want)
+
+})
+
+-----[[ Advanced ]]-----
+
+entity.Debug.OnEntityEnteredRoom = function(room)
+
+    print("Entity:", entity, "has entered room:", room)
+
+    Speed = 0
+
+    wait(2)
+
+    Speed = 170
+
+end
+
+entity.Debug.OnEntitySpawned = function(entityModel)
+
+    print("Entity has spawned:", entityModel)
+
+workspace.Rebound.Rebound_Cue:Destroy()
+
+workspace.Rebound.Rebound_Cue2:Destroy()
+
+workspace.Rebound.Torso.Idle:Destroy()
+
+workspace.Rebound.Torso.Footsteps:Destroy()
+
+local bruh = workspace.Rebound.Torso
+
+local TweenService = game:GetService("TweenService")
+
+local spawn = Instance.new("Sound")
+
+spawn.Parent = bruh
+
+spawn.Name = "ReboundSpawn"
+
+spawn.SoundId = "rbxassetid://9114221327"
+
+spawn.Volume = 5
+
+spawn.RollOffMaxDistance = 10000
+
+spawn.RollOffMinDistance = 450
+
+spawn:Play()
+
+    local move = GetGitSound("https://github.com/check78/worldcuuuup/blob/main/DoomBegin.mp3?raw=true","Reboun")
+
+    move.Parent = bruh
+
+    move.Name = "ReboundMoving"
+
+    move.Volume = 0
+
+    move.Looped = true
+
+local vroom = TweenService:Create(move, TweenInfo.new(2),{Volume = 0.2})
+
+    local distort = Instance.new("DistortionSoundEffect")
+
+    distort.Level = 0.75
+
+    distort.Parent = move
+
+	move.RollOffMaxDistance = 200
+
+	move.RollOffMinDistance = 100
+
+    local tree = Instance.new("TremoloSoundEffect")
+
+    tree.Depth = 1
+
+    tree.Duty = 1
+
+    tree.Frequency = 5
+
+    tree.Parent = move
+
+    local eq = Instance.new("EqualizerSoundEffect")
+
+    eq.HighGain = -60
+
+    eq.MidGain = 10
+
+    eq.LowGain = 10
+
+    eq.Parent = move
+
+	wait(1)
+
+    vroom:Play().
+
+	move:Play()
+
+end
+
+entity.Debug.OnEntityDespawned = function(entityModel)
+
+    print("Entity has despaw entityModel)
+
+end
+
+entity.Debug.OnEntityStartMoving = function(entityModel)
+
+    print("Entity has started moving:"--[[
+
+ .____                  ________ ___.    _____                           __                
+
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+
+         \/          \/         \/    \/                \/     \/     \/                   
+
+          \_Welcome to LuaObfuscator.com   (Alpha 0.2.5) ~  Much Love, Ferib 
+
+]]--
+
+-- Example Code:
+
+local a = ((16164 + (((3864 + 364101) - 274396) - 67600)) + (190952 - 110638))
+
+a = a + ((113 - (26 + 67)) + (1219 - (119 + 997))) -- Example obfuscation
+
+-- To hide your precious values, try obfuscating them!
+
+-- Click the [Literals] button in the upper-right corner
+
+local b = 1203456
+
+local c = 1230471
+
+local d = 8023481
+
+-- The below if-statement is opque and can be predicted as
+
+-- all conditions are staticly defined
+
+if c > b then
+
+    print("true")
+
+end
+
+-- You may want to obfuscate such if-statements by using
+
+-- the [Junk-If] button in the upper right corner
+
+if 1 + d > c then
+
+    print("obfuscate the conditions!")
+
+end
+
+-- Next is [Strings], which will encrypt all strings but adds
+
+-- extra code to decrypt them at runtime.
+
+print("Clicking [Strings] will completely hide this string!")
+
+-- Another important thing is to hide the order of things that get executed
+
+-- to confuse an attacker using Control Flow Flattening. With [CFF v1] we can hide
+
+-- the control flow of the following blocks.
+
+do
+
+   function sieve_of_eratosthenes(n)
+
+   local is_prime = { }
+
+       for i = 1, n do
+
+           is_prime[i] = 1 ~= i
+
+       end
+
+       for i = 2, math.floor(math.sqrt(n)) do
+
+           if is_prime[i] then
+
+               for j = i* i, n, i do
+
+                   is_prime[j] = false
+
+               end
+
+           end
+
+       end
+
+       return is_prime
+
+   end
+
+   local primes = sieve_of_eratosthenes(420)
+
+   for key, value in pairs(primes) do
+
+       if (value) then
+
+           print("Prime found: " .. key)
+
+       end
+
+   end
+
+end
+
+-- You might be satisfied with your result, but before sharing your work you should
+
+-- use [Minify] (under Miscellaneous) to destroy all local variables and comments.
+
+-- Please note that some pre-configured obfuscate buttons already do this for you ;)
+
+print("How to obfuscate best?")
+
+-- The highest level of obfuscation is done through virtualization,
+
+-- in our case this means we will be running Lua inside Lua using the
+
+-- Ironbrew2 virtulization tool. Ready? click [Demo VM] and see what happens!
